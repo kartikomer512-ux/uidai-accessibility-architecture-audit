@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Accessible student management dashboard">
+<title>Dashboard | LearnDesk</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">LD</span><span>LearnDesk</span></a>
+  <div class="header-actions">
+    <button class="icon-btn" type="button" aria-label="Open notifications">🔔</button>
+    <button class="avatar-btn" type="button" aria-label="Open user profile">KO</button>
+  </div>
+</header>
+<div class="layout">
+  <aside class="sidebar" aria-label="Sidebar">
+    <div class="sidebar-title">Workspace</div>
+    <nav aria-label="Dashboard navigation"><ul><li><a href="index.html" aria-current="page"><span aria-hidden="true">▦</span>Dashboard</a></li>
+<li><a href="students.html" ><span aria-hidden="true">♙</span>Students</a></li>
+<li><a href="courses.html" ><span aria-hidden="true">▤</span>Courses</a></li>
+<li><a href="tasks.html" ><span aria-hidden="true">✓</span>Tasks</a></li>
+<li><a href="settings.html" ><span aria-hidden="true">⚙</span>Settings</a></li></ul></nav>
+  </aside>
+  <main class="main" id="main-content">
+    
+<section class="page-heading" aria-labelledby="page-title">
+  <div><div class="eyebrow">Overview</div><h1 id="page-title">Student Dashboard</h1><p class="muted">A clean, accessible workspace for managing students, courses, and tasks.</p></div>
+  <a class="btn btn-primary" href="students.html">View students</a>
+</section>
+
+<section class="grid stats" aria-labelledby="stats-title">
+  <h2 id="stats-title" class="visually-hidden">Dashboard statistics</h2>
+  <article class="card"><div class="stat-label">Total Students</div><div class="stat-value">250</div><div class="stat-change">↑ 8.2% this month</div></article>
+  <article class="card"><div class="stat-label">Active Courses</div><div class="stat-value">18</div><div class="stat-change">↑ 2 new courses</div></article>
+  <article class="card"><div class="stat-label">Tasks Completed</div><div class="stat-value">142</div><div class="stat-change">↑ 12 this week</div></article>
+  <article class="card"><div class="stat-label">Completion Rate</div><div class="stat-value">87%</div><div class="stat-change">↑ 3.4% this month</div></article>
+</section>
+
+<div class="grid two-col">
+<section class="card" aria-labelledby="recent-title">
+  <h2 id="recent-title">Recent students</h2>
+  <div class="table-wrap">
+  <table>
+    <caption>Latest student activity</caption>
+    <thead><tr><th scope="col">Student</th><th scope="col">Course</th><th scope="col">Progress</th><th scope="col">Status</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Aarav Mehta</th><td>Full Stack Web Development</td><td>92%</td><td><span class="badge badge-success">Active</span></td></tr>
+      <tr><th scope="row">Priya Sharma</th><td>JavaScript</td><td>78%</td><td><span class="badge badge-success">Active</span></td></tr>
+      <tr><th scope="row">Rohan Patel</th><td>React</td><td>100%</td><td><span class="badge badge-success">Completed</span></td></tr>
+      <tr><th scope="row">Ananya Rao</th><td>HTML & CSS</td><td>61%</td><td><span class="badge badge-warning">Needs review</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section class="card" aria-labelledby="activity-title">
+  <h2 id="activity-title">Recent activity</h2>
+  <ul class="list">
+    <li><strong>New submission</strong><br><span class="muted">Aarav submitted Task 03 · 12 min ago</span></li>
+    <li><strong>Course completed</strong><br><span class="muted">Rohan completed React Fundamentals · 1 hr ago</span></li>
+    <li><strong>Profile updated</strong><br><span class="muted">Priya updated contact information · 3 hrs ago</span></li>
+    <li><strong>Review requested</strong><br><span class="muted">Ananya needs feedback on Task 02 · 5 hrs ago</span></li>
+  </ul>
+</section>
+</div>
+
+  </main>
+</div>
+<footer class="footer"><p>© 2026 LearnDesk. Built with semantic HTML5 and accessibility in mind.</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
